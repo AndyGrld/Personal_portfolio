@@ -50,7 +50,7 @@ header {
 
 /* Style for first section */
 .home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/hero_image.png');
+  background: radial-gradient(black, rgb(34, 34, 34), black);
   background-size: cover;
   background-position: center;
   color: #fff;

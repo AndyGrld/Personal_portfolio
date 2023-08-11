@@ -1,0 +1,105 @@
+.light_mode{
+  --font_color: black;
+  --bg_color: white;
+  --bg_color_2: #eee;
+  --font_opp_color: #444;
+  --font_sim_color: #aaa;
+}
+.dark_mode{
+  --font_color: white;
+  --bg_color: black;
+  --bg_color_2: #222;
+  --font_opp_color: #bbb;
+  --font_sim_color: #666;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  color: var(--font_color);
+  scroll-behavior: smooth;
+  transition: .3s ease-in;
+}
+header{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg_color);
+}
+a{
+  text-decoration: none;
+}
+nav{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  width: 100vw;
+}
+nav ul li{
+  list-style: none;
+  display: inline;
+  padding: 0 10px;
+}
+nav h1 span, #greeting{
+  color: var(--font_opp_color)
+}
+nav ul li a{
+  color: var(--font_color);
+}
+nav h1{
+  font-size: 1.4em;
+}
+nav #theme{
+  background-color: var(--font_color);
+  color: var(--bg_color);
+  padding: 3px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: inherit;
+}
+.hero .grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.hero .grid .col{
+  margin: 10px;
+}
+.hero .grid .col:first-child{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 2px var(--font_color);
+}
+.hero .grid img{
+  width: inherit;
+  height: inherit;
+}
+.hero .grid .col{
+  text-align: center;
+  font-size: 1.1em;
+}
+.hero .grid .col p{
+  font-weight: 400;
+}
+.hero .grid .col #prof{
+  font-weight: 600;
+  color: var(--font_light_color);
+}
+.links1{
+  position: relative;
+  top: 15px;
+}
+.space{
+  padding: 0 5px;
+  display: inline;
+}

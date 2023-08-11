@@ -4,6 +4,7 @@
   --bg_color_2: #eee;
   --font_opp_color: #666;
   --font_sim_color: #aaa;
+  --section_header_size: 40px;
 }
 .dark_mode{
   --font_color: white;
@@ -11,6 +12,7 @@
   --bg_color_2: #222;
   --font_opp_color: #bbb;
   --font_sim_color: #666;
+  --section_header_size: 40px;
 }
 
 *{

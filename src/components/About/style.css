@@ -10,6 +10,7 @@
 #a_header{
     margin: 30px;
     text-align: center;
+    font-size: var(--section_header_size);
 }
 #a_header span{
     color: var(--font_sim_color);
@@ -43,5 +44,14 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    .a_grid .a_col img{
+        width: 200px;
+        height: 260px
+    }
+    #a_header{
+        position: relative;
+        top: 2vh;
+        margin: 0;
     }
 }

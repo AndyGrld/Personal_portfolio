@@ -8,7 +8,9 @@ const Experience = () => {
 
   return (
     <div className='exp' id='exp'>
-        <h1 id='e_head'>Experience</h1>
+        <h1 id='e_head'>
+            Experience
+        </h1>
         <div className='e_grid'>
             <div className='e_cell'>
                 <h1>Frontend Develpment</h1>

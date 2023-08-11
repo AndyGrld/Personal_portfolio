@@ -4,12 +4,10 @@ import './style.css'
 const Projects = () => {
   return (
     <div id='projects'>
-        <div className='p_left'>
-            <h1>
-              <span>Here are some of</span><br/>
+        <h1 className='p_left'>
+            <span>Here are some of</span><br/>
               My Projects
-            </h1>
-        </div>
+        </h1>
         <div className='p_right'>
             <div className='container'>
               <p>Game Showcase Website</p>

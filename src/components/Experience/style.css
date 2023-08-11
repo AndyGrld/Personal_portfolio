@@ -9,6 +9,7 @@
 }
 .exp #e_head{
     margin: 20px 0;
+    font-size: var(--section_header_size);
 }
 .e_grid{
     display:grid;

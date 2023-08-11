@@ -9,8 +9,9 @@
 }
 #projects .p_left{
     text-align: center;
+    font-size: var(--section_header_size);
 }
-.p_left h1 span{
+.p_left span{
     color: var(--font_sim_color);
     font-size: 1.3rem;
     position: relative;
@@ -26,6 +27,7 @@
     padding: 5px;
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 #projects .p_right img{
     width: 100%;
@@ -73,7 +75,15 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
     }
-    .p_left h1 span{
+    #projects .section_head{
+        margin: 0;
+        position: relative;
+        top: 2vh;
+    }
+    .p_left span{
         margin-top: 20px;
+    }
+    #projects .p_right img{
+        height: 160px;
     }
 }

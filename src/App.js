@@ -6,7 +6,7 @@ import Experience from './components/Experience/Experience';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import { FaLinkedin, FaGithub } from 'react-icons/fa'; // For LinkedIn
+import { FaLinkedin, FaGithub, FaBars, FaWindowClose } from 'react-icons/fa'; // For LinkedIn
 
 function App() {
   const [mode, setMode] = useState('light_mode');
@@ -18,18 +18,19 @@ function App() {
       setMode('light_mode');
     }
   }
+
   return (
     <div className={`App ${mode}`}>
       <header>
         <div className='navigation'>
           <h1>Ansong <span>Andy</span></h1>
-          <div>
+          <div className='links'>
             <ul>
               <li><a href='#projects'>Projects</a></li>
-              <li><a href='#exp'>Experience</a></li>
+              <li><a href='#exp'>Experience</a></li><br/>
               <li><a href='#about'>About</a></li>
-              <li><a href='#contact'>Contact</a></li>
-              <li id='theme' onClick={changeTheme}>Change Theme</li>
+              <li><a href='#contact'>Contact</a></li><br/>
+              <li id='theme' onClick={changeTheme}><span>Change</span> Theme</li>
             </ul>
           </div>
         </div>

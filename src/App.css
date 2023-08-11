@@ -2,7 +2,7 @@
   --font_color: black;
   --bg_color: white;
   --bg_color_2: #eee;
-  --font_opp_color: #444;
+  --font_opp_color: #666;
   --font_sim_color: #aaa;
 }
 .dark_mode{
@@ -40,6 +40,7 @@ a{
   align-items: center;
   padding: 20px 0;
   width: 100vw;
+  background-color: red;
 }
 .navigation ul li{
   list-style: none;
@@ -61,6 +62,26 @@ a{
   padding: 3px 5px;
   border-radius: 20px;
   cursor: pointer;
+}
+.navigation #theme span{
+  color: var(--bg_color);
+}
+@media (max-width: 720px) {
+  .navigation ul{
+    display: block;
+    text-align: right;
+  }
+  .navigation ul li{
+    padding: 0 5px;
+  }
+  .navigation #theme{
+    position: relative;
+    top: 3px;
+    padding: 2px 3px;
+  }
+  .navigation #theme span{
+    display: none;
+  }
 }
 .hero{
   display: flex;
@@ -107,4 +128,13 @@ a{
 .space{
   padding: 0 5px;
   display: inline;
+}
+@media (max-width: 720px){
+  .hero .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
 }

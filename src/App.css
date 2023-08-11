@@ -65,6 +65,9 @@ a{
 .navigation #theme span{
   color: var(--bg_color);
 }
+.navigation ul br{
+  display: none;
+}
 @media (max-width: 720px) {
   .navigation ul{
     display: block;

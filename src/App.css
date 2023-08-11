@@ -20,6 +20,12 @@
   scroll-behavior: smooth;
   transition: .3s ease-in;
 }
+#root{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
 header{
   width: 100vw;
   height: 100vh;
@@ -28,29 +34,28 @@ header{
 a{
   text-decoration: none;
 }
-nav{
-  position: absolute;
+.navigation{
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px 0;
   width: 100vw;
 }
-nav ul li{
+.navigation ul li{
   list-style: none;
   display: inline;
   padding: 0 10px;
 }
-nav h1 span, #greeting{
+.navigation h1 span, #greeting{
   color: var(--font_opp_color)
 }
-nav ul li a{
+.navigation ul li a{
   color: var(--font_color);
 }
-nav h1{
+.navigation h1{
   font-size: 1.4em;
 }
-nav #theme{
+.navigation #theme{
   background-color: var(--font_color);
   color: var(--bg_color);
   padding: 3px 5px;

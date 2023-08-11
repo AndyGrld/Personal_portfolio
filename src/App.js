@@ -21,7 +21,7 @@ function App() {
   return (
     <div className={`App ${mode}`}>
       <header>
-        <nav>
+        <div className='navigation'>
           <h1>Ansong <span>Andy</span></h1>
           <div>
             <ul>
@@ -32,7 +32,7 @@ function App() {
               <li id='theme' onClick={changeTheme}>Change Theme</li>
             </ul>
           </div>
-        </nav>
+        </div>
         <div className='hero'>
           <div className='grid'>
             <div className='col'>

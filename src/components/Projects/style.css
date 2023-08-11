@@ -68,3 +68,9 @@
     opacity: 1;
     top: 0;
 }
+@media (max-width: 720px){
+    #projects .p_right{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

@@ -35,3 +35,21 @@
     font-size: 18px;
     padding: 10px 5px;
 }
+@media (max-width: 720px){
+    .e_grid{
+        display:grid;
+        padding: 30px;
+        grid-template-columns: 1fr;
+    }
+    .e_grid .e_cell{
+        padding: 5px;
+        margin: 10px;
+        font-size: 10px;
+        height: min-content;
+    }
+    
+.e_cell .content p{
+    font-size: 15px;
+    padding: 5px;
+}
+}

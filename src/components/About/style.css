@@ -38,3 +38,10 @@
     border-radius: 20px;
     box-shadow: 0 0 2px var(--font_color);
 }
+@media (max-width: 720px){
+    .a_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

@@ -84,6 +84,9 @@ a{
   .navigation #theme span{
     display: none;
   }
+  .navigation ul br{
+    display: block;
+  }
 }
 .hero{
   display: flex;

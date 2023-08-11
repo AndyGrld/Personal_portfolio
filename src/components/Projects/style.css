@@ -71,6 +71,9 @@
 @media (max-width: 720px){
     #projects .p_right{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .p_left h1 span{
+        margin-top: 20px;
     }
 }

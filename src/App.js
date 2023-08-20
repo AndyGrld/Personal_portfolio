@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import {useState} from 'react';
 import './App.css';
 import Projects from './components/Projects/Projects';
@@ -6,16 +5,22 @@ import Experience from './components/Experience/Experience';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import { FaLinkedin, FaGithub, FaBars, FaWindowClose } from 'react-icons/fa'; // For LinkedIn
+import { FaLinkedin, FaGithub} from 'react-icons/fa';
+
 
 function App() {
-  const [mode, setMode] = useState('light_mode');
+  let prevMode = sessionStorage.getItem('prevMode') ?
+  sessionStorage.getItem('prevMode') :
+  'light_mode'
+  const [mode, setMode] = useState(prevMode);
 
   const changeTheme = () => {
     if (mode === 'light_mode'){
       setMode('dark_mode');
+      sessionStorage.setItem("prevMode", "dark_mode");
     }else{
       setMode('light_mode');
+      sessionStorage.setItem("prevMode", "light_mode")
     }
   }
 
@@ -37,7 +42,7 @@ function App() {
         <div className='hero'>
           <div className='grid'>
             <div className='col'>
-              <img src='face2.jfif' alt='my profile'/>
+              <img src='face.png' alt='my profile'/>
             </div>
             <div className='col'>
               <p id='greeting'>Hi, I'm</p>

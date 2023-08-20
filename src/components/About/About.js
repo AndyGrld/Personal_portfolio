@@ -10,7 +10,7 @@ const About = () => {
         </h1>
         <div className='a_grid'>
             <div className='a_col'>
-                <img src='face2.jfif' alt='profile'/>
+                <img src='body.png' alt='profile'/>
             </div>
             <div className='a_col'>
               <p>

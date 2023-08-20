@@ -38,6 +38,7 @@
     width: 200px;
     border-radius: 20px;
     box-shadow: 0 0 2px var(--font_color);
+    background-color: var(--bg_color_2);
 }
 @media (max-width: 720px){
     .a_grid{

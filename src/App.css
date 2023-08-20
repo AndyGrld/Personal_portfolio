@@ -116,6 +116,7 @@ a{
 .hero .grid img{
   width: inherit;
   height: inherit;
+  background-color: var(--bg_color_2);
 }
 .hero .grid .col{
   text-align: center;

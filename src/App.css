@@ -111,7 +111,7 @@ a{
   height: 250px;
   overflow: hidden;
   border-radius: 50%;
-  box-shadow: 0 0 2px var(--font_color);
+  box-shadow: 0 0 4px var(--font_color);
 }
 .hero .grid img{
   width: inherit;

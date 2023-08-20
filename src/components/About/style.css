@@ -37,10 +37,10 @@
 .a_grid .a_col img{
     width: 200px;
     border-radius: 20px;
-    box-shadow: 0 0 2px var(--font_color);
+    box-shadow: 0 0 4px var(--font_color);
     background-color: var(--bg_color_2);
 }
-@media (max-width: 720px){
+@media (max-width: 675px){
     .a_grid{
         display: grid;
         grid-template-columns: 1fr;

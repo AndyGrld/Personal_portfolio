@@ -5,7 +5,7 @@
     align-items: center;
     width: 100vw;
     background-color: var(--bg_color_2);
-    height: 100vh;
+    min-height: 100vh;
 }
 #a_header{
     margin: 30px;
